@@ -4,11 +4,11 @@ metadata:
   name: nginx-replicaset
   namespace: default
 spec:
-  replicas: 3 # We want 3 copies of our Nginx Pod
+  replicas: 3 
   selector:
     matchLabels:
       app: nginx-rs-app # This selector must match the Pod's labels
-  template: # This is the Pod template for the ReplicaSet
+  template: 
     metadata:
       labels:
         app: nginx-rs-app # Pod's labels
